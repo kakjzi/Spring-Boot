@@ -1,7 +1,7 @@
 ## 개발환경 
 IDE : IntelliJ IDEA Ultimate <BR>
 Git Tools : Git Bash <BR>
-OS : Window <BR>
+OS : Window 10 <BR>
 SpringBoot 2.5.4 <BR>
 Java 11 <BR>
 Gradle <BR>
