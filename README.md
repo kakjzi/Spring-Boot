@@ -1,14 +1,14 @@
 # Spring-Boot
 
-##개발환경
-IDE : IntelliJ IDEA Ultimate
-Git Tools : Git Bash
-OS : Window
-SpringBoot 2.5.4
-Java11
-Gradle
+## 개발환경 
+IDE : IntelliJ IDEA Ultimate <BR>
+Git Tools : Git Bash <BR>
+OS : Window <BR>
+SpringBoot 2.5.4 <BR>
+Java 11 <BR>
+Gradle <BR>
 
-##스프링 공부 & 정리
+## 스프링 공부 & 정리
 0. 스프링 입문
 
 ##생소한 개념
