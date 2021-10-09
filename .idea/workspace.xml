@@ -4,17 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ec3fb58d-878a-4363-821d-d8b7be96e489" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/스프링입문/sql/ddl.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/스프링입문/src/main/java/com/example/demo/repository/JdbcMemberRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/스프링입문/src/main/resources/templates/members/memberList.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="ec3fb58d-878a-4363-821d-d8b7be96e489" name="Changes" comment="FIX: MemoryRepository to JDBCRepository">
+      <change afterPath="$PROJECT_DIR$/스프링입문/src/test/java/com/example/demo/service/MemberServiceIntergrationTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/스프링입문/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/스프링입문/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/스프링입문/src/main/java/com/example/demo/SpringConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/스프링입문/src/main/java/com/example/demo/SpringConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/스프링입문/src/main/java/com/example/demo/controller/MemberController.java" beforeDir="false" afterPath="$PROJECT_DIR$/스프링입문/src/main/java/com/example/demo/controller/MemberController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/스프링입문/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/스프링입문/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -91,33 +83,17 @@
     <key name="CreateTestDialog.RecentsKey">
       <recent name="com.example.demo.service" />
     </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.example.demo.service" />
+    </key>
   </component>
-  <component name="RunManager" selected="Application.DemoApplication">
+  <component name="RunManager" selected="JUnit.MemberServiceIntergrationTest">
     <configuration name="DemoApplication" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.example.demo.DemoApplication" />
       <module name="demo.main" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
-    </configuration>
-    <configuration name="Clean Build" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$/스프링입문" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="-x test" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list />
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <method v="2" />
     </configuration>
     <configuration name="MemberServiceTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
@@ -159,25 +135,6 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="Tests in 'demo.main'" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$/스프링입문" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list />
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <method v="2" />
-    </configuration>
     <configuration name="Tests in 'demo.test'" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -199,6 +156,52 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
+    <configuration name="MemberServiceIntergrationTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="demo.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.demo.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.example.demo.service" />
+      <option name="MAIN_CLASS_NAME" value="com.example.demo.service.MemberServiceIntergrationTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MemberServiceIntergrationTest.회원가입" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="demo.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.demo.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.example.demo.service" />
+      <option name="MAIN_CLASS_NAME" value="com.example.demo.service.MemberServiceIntergrationTest" />
+      <option name="METHOD_NAME" value="회원가입" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MemoryMemberRepositoryTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="demo.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.demo.repository.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.example.demo.repository" />
+      <option name="MAIN_CLASS_NAME" value="com.example.demo.repository.MemoryMemberRepositoryTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="DemoApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="demo.main" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.demo.DemoApplication" />
@@ -210,17 +213,19 @@
       <item itemvalue="Application.DemoApplication" />
       <item itemvalue="Gradle.Tests in 'com.example.demo'" />
       <item itemvalue="Gradle.MemberServiceTest" />
-      <item itemvalue="Gradle.Clean Build" />
-      <item itemvalue="Gradle.Tests in 'demo.main'" />
       <item itemvalue="Gradle.Tests in 'demo.test'" />
       <item itemvalue="Spring Boot.DemoApplication" />
+      <item itemvalue="JUnit.MemoryMemberRepositoryTest" />
+      <item itemvalue="JUnit.MemberServiceIntergrationTest.회원가입" />
+      <item itemvalue="JUnit.MemberServiceIntergrationTest" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.Clean Build" />
-        <item itemvalue="Gradle.Tests in 'demo.test'" />
-        <item itemvalue="Gradle.Tests in 'demo.main'" />
+        <item itemvalue="JUnit.MemberServiceIntergrationTest" />
+        <item itemvalue="JUnit.MemberServiceIntergrationTest.회원가입" />
+        <item itemvalue="JUnit.MemoryMemberRepositoryTest" />
         <item itemvalue="Gradle.MemberServiceTest" />
+        <item itemvalue="Gradle.Tests in 'demo.test'" />
       </list>
     </recent_temporary>
   </component>
@@ -236,8 +241,16 @@
       <workItem from="1633434751585" duration="1769000" />
       <workItem from="1633480397584" duration="2682000" />
       <workItem from="1633675054137" duration="1836000" />
-      <workItem from="1633751180138" duration="4442000" />
+      <workItem from="1633751180138" duration="5220000" />
     </task>
+    <task id="LOCAL-00001" summary="FIX: MemoryRepository to JDBCRepository">
+      <created>1633778137453</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1633778137453</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -257,6 +270,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="FIX: MemoryRepository to JDBCRepository" />
+    <option name="LAST_COMMIT_MESSAGE" value="FIX: MemoryRepository to JDBCRepository" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

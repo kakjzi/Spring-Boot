@@ -1,30 +1,25 @@
 package com.example.demo.service;
 
 import com.example.demo.domain.Member;
+import com.example.demo.repository.MemberRepository;
 import com.example.demo.repository.MemoryMemberRepository;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.transaction.annotation.Transactional;
 
 import static org.assertj.core.api.Assertions.assertThat;
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertThrows;
 
+@SpringBootTest
+@Transactional  // Test는 반복해서 할 수 있어야함.
+    // 트랜잭션 후 DB 테스트 후 ROLL BACK 되어지게 하는 애노테이션~!!!
+class MemberServiceIntergrationTest {
 
-//단위 TEST 위주로 TEST 할것~~!!
-class MemberServiceTest {
-    MemberService memberService;
-    MemoryMemberRepository memberRepository;
-
-    @BeforeEach
-    public void beforeEach(){
-        memberRepository = new MemoryMemberRepository();
-        memberService = new MemberService(memberRepository);
-    }
-
-    @AfterEach
-    public void afterEach(){
-        memberRepository.clearStore();
-    }
+    @Autowired MemberService memberService;
+    @Autowired MemberRepository memberRepository;
 
     @Test
     void 회원가입() {
@@ -56,12 +51,6 @@ class MemberServiceTest {
         //메시지 확인
        // assertThat(e.getMessage()).isEqualTo("이미 존재하는 회원입니다.")
 
-/*        try {
-            memberService.join(member2);
-            fail();
-        } catch (IllegalStateException e){
-            assertThat(e.getMessage()).isEqualTo("이미 존재하는 회원입니다.");
-        }*/
 
         //then
     }
