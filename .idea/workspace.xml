@@ -5,25 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ec3fb58d-878a-4363-821d-d8b7be96e489" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/Spring-Boot.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/스프링입문/src/main/java/com/example/demo/SpringConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/스프링입문/src/main/java/com/example/demo/controller/HomeController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/스프링입문/src/main/java/com/example/demo/controller/MemberController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/스프링입문/src/main/java/com/example/demo/controller/MemberForm.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/스프링입문/src/main/resources/templates/home.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/스프링입문/src/main/resources/templates/members/createMemberForm.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/스프링입문/src/test/java/com/example/demo/service/MemberServiceTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/스프링입문/sql/ddl.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/스프링입문/src/main/java/com/example/demo/repository/JdbcMemberRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/스프링입문/src/main/resources/templates/members/memberList.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/스프링입문/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/스프링입문/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/스프링입문/src/main/java/com/example/demo/repository/MemberRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/스프링입문/src/main/java/com/example/demo/repository/MemberRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/스프링입문/src/main/java/com/example/demo/repository/MemoryMemberRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/스프링입문/src/main/java/com/example/demo/repository/MemoryMemberRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/스프링입문/src/main/java/com/example/demo/service/MemberService.java" beforeDir="false" afterPath="$PROJECT_DIR$/스프링입문/src/main/java/com/example/demo/service/MemberService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/스프링입문/src/main/java/com/example/demo/SpringConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/스프링입문/src/main/java/com/example/demo/SpringConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/스프링입문/src/main/java/com/example/demo/controller/MemberController.java" beforeDir="false" afterPath="$PROJECT_DIR$/스프링입문/src/main/java/com/example/demo/controller/MemberController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/스프링입문/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/스프링입문/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -243,6 +234,9 @@
       <updated>1633426405535</updated>
       <workItem from="1633426407820" duration="8145000" />
       <workItem from="1633434751585" duration="1769000" />
+      <workItem from="1633480397584" duration="2682000" />
+      <workItem from="1633675054137" duration="1836000" />
+      <workItem from="1633751180138" duration="4442000" />
     </task>
     <servers />
   </component>

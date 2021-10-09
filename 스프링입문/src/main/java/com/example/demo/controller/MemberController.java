@@ -4,8 +4,11 @@ import com.example.demo.domain.Member;
 import com.example.demo.service.MemberService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
+
+import java.util.List;
 
 @Controller
 public class MemberController {
@@ -21,7 +24,7 @@ public class MemberController {
         return "members/createMemberForm";
     }
     @PostMapping("/members/new")
-    public String create(MemberForm form){
+    public String create(MemberForm form) {
         Member member = new Member();
         member.setName(form.getName());
 
@@ -29,5 +32,12 @@ public class MemberController {
 
         //home 으로~
         return "redirect:/";
+    }
+
+    @GetMapping("/members")
+    public String list(Model model) {
+        List<Member> members = memberService.findMembers(); // 모든 회원을  members에 담아둠.
+        model.addAttribute("members", members);
+        return "members/memberList";
     }
 }
