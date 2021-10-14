@@ -15,7 +15,7 @@ import static org.junit.jupiter.api.Assertions.assertThrows;
 
 @SpringBootTest
 @Transactional  // Test는 반복해서 할 수 있어야함.
-    // 트랜잭션 후 DB 테스트 후 ROLL BACK 되어지게 하는 애노테이션~!!!
+                // 트랜잭션 후 DB 테스트 후 ROLL BACK 되어지게 하는 애노테이션~!!!
 class MemberServiceIntergrationTest {
 
     @Autowired MemberService memberService;
