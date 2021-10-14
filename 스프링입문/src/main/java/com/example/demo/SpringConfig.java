@@ -1,14 +1,13 @@
 package com.example.demo;
 
-import com.example.demo.repository.JdbcMemberRepository;
-import com.example.demo.repository.MemberRepository;
-import com.example.demo.repository.MemoryMemberRepository;
+import com.example.demo.repository.*;
 import com.example.demo.service.MemberService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.convert.DataSizeUnit;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
+import javax.persistence.EntityManager;
 import javax.sql.DataSource;
 import javax.xml.crypto.Data;
 
@@ -21,11 +20,17 @@ public class SpringConfig {
     //@Autowired DataSource dataSource; // 방법 1
 
     // 방법2
-    private DataSource dataSource;
+    //private DataSource dataSource;
 
-    @Autowired
-    public SpringConfig(DataSource dataSource){
-        this.dataSource=dataSource;
+    // 방법3
+    //@Autowired
+    //public SpringConfig(DataSource dataSource){
+    //    this.dataSource=dataSource;
+    //}
+    private EntityManager em;
+
+    public SpringConfig(EntityManager em) {
+        this.em = em;
     }
 
     @Bean
@@ -35,6 +40,6 @@ public class SpringConfig {
 
     @Bean
     public  MemberRepository memberRepository(){
-        return new JdbcMemberRepository(dataSource);
+        return new JpaMemberRepository(em);
     }
 }

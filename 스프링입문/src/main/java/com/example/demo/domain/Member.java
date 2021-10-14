@@ -1,6 +1,13 @@
 package com.example.demo.domain;
 
+
+
+import javax.persistence.*;
+
+@Entity
 public class Member {
+
+    @Id @GeneratedValue(strategy = GenerationType.IDENTITY) // db 가 알아서 인덱스 올려줄 때
     private Long id;
     private String name;
 
