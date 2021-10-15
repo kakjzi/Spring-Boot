@@ -27,19 +27,29 @@ public class SpringConfig {
     //public SpringConfig(DataSource dataSource){
     //    this.dataSource=dataSource;
     //}
-    private EntityManager em;
+
+    // JPA
+/*    private EntityManager em;
 
     public SpringConfig(EntityManager em) {
         this.em = em;
+    }*/
+
+    // spring JPA
+
+    private final MemberRepository memberRepository;
+
+    public SpringConfig(MemberRepository memberRepository) {
+        this.memberRepository = memberRepository;
     }
 
     @Bean
     public MemberService memberService(){
-        return new MemberService(memberRepository());
+        return new MemberService(memberRepository);
     }
 
-    @Bean
+/*    @Bean
     public  MemberRepository memberRepository(){
         return new JpaMemberRepository(em);
-    }
+    }*/
 }
