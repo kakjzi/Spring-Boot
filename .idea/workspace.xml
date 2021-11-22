@@ -5,8 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ec3fb58d-878a-4363-821d-d8b7be96e489" name="Changes" comment="FIX: MemoryRepository to JDBCRepository">
-      <change afterPath="$PROJECT_DIR$/스프링입문/src/test/java/com/example/demo/service/MemberServiceIntergrationTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/스프링입문/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/스프링입문/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -74,6 +73,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="File.Encoding" />
   </component>
   <component name="RecentsManager">
@@ -214,10 +214,10 @@
       <item itemvalue="Gradle.Tests in 'com.example.demo'" />
       <item itemvalue="Gradle.MemberServiceTest" />
       <item itemvalue="Gradle.Tests in 'demo.test'" />
-      <item itemvalue="Spring Boot.DemoApplication" />
       <item itemvalue="JUnit.MemoryMemberRepositoryTest" />
       <item itemvalue="JUnit.MemberServiceIntergrationTest.회원가입" />
       <item itemvalue="JUnit.MemberServiceIntergrationTest" />
+      <item itemvalue="Spring Boot.DemoApplication" />
     </list>
     <recent_temporary>
       <list>
@@ -242,6 +242,7 @@
       <workItem from="1633480397584" duration="2682000" />
       <workItem from="1633675054137" duration="1836000" />
       <workItem from="1633751180138" duration="5220000" />
+      <workItem from="1637397668666" duration="3000" />
     </task>
     <task id="LOCAL-00001" summary="FIX: MemoryRepository to JDBCRepository">
       <created>1633778137453</created>

@@ -9,6 +9,7 @@ import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.annotation.Commit;
+import org.springframework.test.context.web.WebAppConfiguration;
 import org.springframework.transaction.annotation.Transactional;
 
 import static org.assertj.core.api.Assertions.assertThat;
@@ -17,6 +18,7 @@ import static org.junit.jupiter.api.Assertions.assertThrows;
 @SpringBootTest
 @Transactional  // Test는 반복해서 할 수 있어야함.
                 // 트랜잭션 후 DB 테스트 후 ROLL BACK 되어지게 하는 애노테이션~!!!
+@WebAppConfiguration
 class MemberServiceIntergrationTest {
 
     @Autowired MemberService memberService;

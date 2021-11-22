@@ -6,21 +6,20 @@ plugins {
 
 group = 'com.example'
 version = '0.0.1-SNAPSHOT'
-sourceCompatibility = '11'
-
 repositories {
 	mavenCentral()
 }
 
 dependencies {
-	implementation 'org.springframework.boot:spring-boot-starter-thymeleaf'
-	implementation 'org.springframework.boot:spring-boot-starter-web'
-	testImplementation 'org.springframework.boot:spring-boot-starter-test'
+	implementation 'org.springframework.boot:spring-boot-starter-thymeleaf:2.5.6'
+	implementation 'org.springframework.boot:spring-boot-starter-web:2.5.6'
+	testImplementation 'org.springframework.boot:spring-boot-starter-test:2.5.6'
 	//implementation 'org.springframework.boot:spring-boot-starter-jdbc'
-	implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
+	implementation 'org.springframework.boot:spring-boot-starter-data-jpa:2.5.6'
+	implementation 'org.springframework.boot:spring-boot-starter-aop'
 
-	runtimeOnly 'com.h2database:h2'
-	testImplementation('org.springframework.boot:spring-boot-starter-test') {
+	runtimeOnly 'com.h2database:h2:1.4.200'
+	testImplementation('org.springframework.boot:spring-boot-starter-test:2.5.6') {
 		exclude group: 'org.junit.vintage', module: 'junit-vintage-engine'
 	}
 }
@@ -28,4 +27,3 @@ dependencies {
 test {
 	useJUnitPlatform()
 }
-
