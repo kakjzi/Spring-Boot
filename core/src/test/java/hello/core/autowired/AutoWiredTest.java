@@ -13,7 +13,6 @@ import java.util.Optional;
 public class AutoWiredTest {
 
     @Test
-    @DisplayName("")
     void AutoWiredOption() {
         //given
         ApplicationContext ac = new AnnotationConfigApplicationContext(TestBean.class);
