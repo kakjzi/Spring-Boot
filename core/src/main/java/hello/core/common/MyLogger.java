@@ -1,6 +1,7 @@
 package hello.core.common;
 
 import org.springframework.context.annotation.Scope;
+import org.springframework.context.annotation.ScopedProxyMode;
 import org.springframework.stereotype.Component;
 
 import javax.annotation.PostConstruct;
@@ -8,7 +9,7 @@ import javax.annotation.PreDestroy;
 import java.util.UUID;
 
 @Component
-@Scope(value = "request") //실제 http요청이 오지않았기 때문에 에러 / 이 단계는 DI 생성과 초기화 단계에서 정해지므로 뒤로 미뤄야함
+@Scope(value = "request", proxyMode = ScopedProxyMode.TARGET_CLASS) //실제 http요청이 오지않았기 때문에 에러 / 이 단계는 DI 생성과 초기화 단계에서 정해지므로 뒤로 미뤄야함
 public class MyLogger {
 
     private String uuid;

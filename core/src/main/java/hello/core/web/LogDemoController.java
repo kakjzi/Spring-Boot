@@ -15,14 +15,16 @@ public class LogDemoController {
 
     private final LogDemoService logDemoService;
     //private final MyLogger myLogger; // request 요청이 들어오지않아 결과를 확인할 수 없음
-    private final ObjectProvider<MyLogger> myLoggerProvider; // 요청들어올때마다 각각의 객체를 만들어줌
+    private final MyLogger myLogger; // 요청들어올때마다 각각의 객체를 만들어줌
 
 
     @RequestMapping("log-demo")
     @ResponseBody //문자를 그대로 응답을 보낼 수 있음
     public String logDemo(HttpServletRequest request) {
         String requestURL = request.getRequestURL().toString();
-        MyLogger myLogger = myLoggerProvider.getObject();
+
+        //프록시 객체 역할 확인
+        System.out.println("myLogger = " + myLogger.getClass());
         myLogger.setRequestURL(requestURL);
 
         myLogger.log("controller test");
