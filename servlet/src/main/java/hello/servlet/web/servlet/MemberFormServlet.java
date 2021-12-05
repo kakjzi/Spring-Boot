@@ -28,7 +28,7 @@ public class MemberFormServlet extends HttpServlet {
                 "        <title>Title</title>\n" +
                 "    </head>\n" +
                 "    <body>\n" +
-                "    <form action=\"/request-param\" method=\"post\">\n" +
+                "    <form action=\"/servlet/members/save\" method=\"post\">\n" +
                 "    username: <input type=\"text\" name=\"username\" /> " +
                 "    age: <input type=\"text\" name=\"age\" />" +
                 "    <button type=\"submit\">전송</button>\n" +
