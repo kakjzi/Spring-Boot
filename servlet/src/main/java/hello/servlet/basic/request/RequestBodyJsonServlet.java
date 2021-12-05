@@ -13,7 +13,7 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.nio.charset.StandardCharsets;
 
-@WebServlet(name = "RequestBodyJsonServlet", urlPatterns = "/request-body-json")
+@WebServlet(name = "requestBodyJsonServlet", urlPatterns = "/request-body-json")
 public class RequestBodyJsonServlet extends HttpServlet {
     //JSON Data를 객체로 하려면 Jackson 라이브러리 사용해야함.~
     private ObjectMapper objectMapper = new ObjectMapper();
