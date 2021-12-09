@@ -25,6 +25,8 @@ public class OldController implements Controller {  //SimpleControllerHandlerAda
     @Override
     public ModelAndView handleRequest(HttpServletRequest request, HttpServletResponse response) throws Exception {
         System.out.println("OldController.handleRequest");
-        return null;
+
+        //application.properties 설정에 뷰리졸버 정보 등록.
+        return new ModelAndView("new-form");
     }
 }
