@@ -77,11 +77,13 @@ public class BasicItemController {
         // Item -> item
 
         itemRepository.save(item);
-        return "basic/item";
+
+        //PRG 패턴
+        return "redirect:/basic/items/" + item.getId();
     }
 
     //@PostMapping("/add")
-    public String addItemV4( Item item) {
+    public String addItemV4(Item item) {
         // 간단한 타입일 때는 @RequestParam 적용
         // 객체타입 일 때 @ModelAttribute 적용
 
