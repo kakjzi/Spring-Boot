@@ -1,11 +1,14 @@
 HELP.md
-
+.gradle
 build/
-!gradle/wrapper/gradle-wrapper.jar
+gradle/wrapper/gradle-wrapper.jar
+gradle/wrapper/gradle-wrapper.properties
+gradlew
+gradlew.bat
+settings.gradle
 !**/src/main/**/build/
 !**/src/test/**/build/
-*.jar
-*.properties
+
 ### STS ###
 .apt_generated
 .classpath
@@ -17,8 +20,6 @@ build/
 bin/
 !**/src/main/**/bin/
 !**/src/test/**/bin/
-/gradlew
-*.bat
 
 ### IntelliJ IDEA ###
 .idea
