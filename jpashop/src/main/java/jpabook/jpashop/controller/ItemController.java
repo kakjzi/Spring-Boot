@@ -74,17 +74,15 @@ public class ItemController {
      * 상품 수정
      */
     @PostMapping(value = "/items/{itemId}/edit")
-    public String updateItem(@ModelAttribute("form") BookForm form, @PathVariable String itemId) {
+    public String updateItem(@ModelAttribute("form") BookForm form, @PathVariable Long itemId) {
 
-        Book book = new Book();
-        book.setId(form.getId());
-        book.setName(form.getName());
-        book.setPrice(form.getPrice());
-        book.setStockQuantity(form.getStockQuantity());
-        book.setAuthor(form.getAuthor());
-        book.setIsbn(form.getIsbn());
+        //준영속 엔티티 -> jpa 가 관리를 안함.
+        //준영속 엔티티 수정 방법
+        //1.변경감지방법 , 2.Merge (비 추천)
 
-        itemService.saveItem(book);
+        //컨트롤러에서 어설프게 엔티티를 생성하지 말자
+
+        itemService.updateItem(itemId, form.getName(), form.getPrice(), form.getStockQuantity());
 
         return "redirect:/items";
     }
