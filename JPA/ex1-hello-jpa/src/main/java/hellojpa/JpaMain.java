@@ -4,6 +4,7 @@ import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
 import javax.persistence.EntityTransaction;
 import javax.persistence.Persistence;
+import java.util.List;
 
 public class JpaMain {
     public static void main(String[] args) {
@@ -14,25 +15,26 @@ public class JpaMain {
         tx.begin();
 
         try{
-            //저장
-          /*  Member member = new Member();
-            member.setId(2L);
-            member.setName("HelloB");
-            em.persist(member);*/
+            //JPQL
+   /*         List<Member> result = em.createQuery("select m from Member as m", Member.class)
+                    .getResultList();
 
-            //수정
-           /* Member findMember = em.find(Member.class, 1L);
-            findMember.setName("sdgdf");     -> JPA 가 관리해주므로 persist 를 따로 하지 않아도됨*/
+            for (Member member : result) {
+                System.out.println("member.getName() = " + member.getName());
+            }*/
 
-            //삭제
-            Member findMember = em.find(Member.class, 1L);
-            em.remove(findMember);
+            /*
+            //비영속
+            Member member = new Member();
+            member.setId(1L);
+            member.setName("jiwoo");
 
-            //조회
-            System.out.println("findMember.getId = " + findMember.getId());
-            System.out.println("findMember.getName = " + findMember.getName());
+            //영속
+            em.persist(member);
 
-            tx.commit();
+
+             */
+            tx.commit();  //db에 쿼리가 날아가는 타이밍.
         }catch (Exception e){
             tx.rollback();
         }finally {
